@@ -1,4 +1,4 @@
-name: Build MT7620
+name: Build Firmware
 
 on: 
   release:
@@ -38,7 +38,7 @@ jobs:
         mkdir -p /opt/images/
     - name: Build Firmware
       env:
-        TNAME: "NEWIFI-MINI MI-MINI MI-3 OYE-001 YK-L1 JCG-AC836M 5K-W20"
+        TNAME: "K2P-5.0"
       run: |
         cwd=`pwd`
         CONFIG_TOOLCHAIN_DIR=${cwd//\//\\\/}\\/toolchain-mipsel
